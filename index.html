@@ -2,6 +2,19 @@
 <html>
   <!--onload="window.location.replace("pagerapp://home")"-->
 <body>
-  <button onclick="window.location.replace('pagerapp://home')" type="button">Click Me!</button>
+   <script>
+    function onLoad(){
+       var urlLink = "http://www.instagram.com/OwenDunnigan";
+       var ua = navigator.userAgent.toLowerCase();
+       var isAndroid = ua.indexOf("android") > -1;
+       if(isAndroid) {
+          urlLink = "instagram://user?username=owendunnigan";
+       }
+       document.getElementById('yourLink').setAttribute('href', urlLink);
+    }
+    window.onload = onLoad;
+    </script>
+    
+    <a id="yourLink" class="grey-text text-lighten-3" target="_blank">Link</a>
 </body>
 </html>
