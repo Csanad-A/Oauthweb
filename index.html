@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
-<body onload="window.location.replace("pagerapp://home")">
+<body onload="">
+  <script>
+  var ua = navigator.userAgent.toLowerCase();
+  var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+  if(isAndroid) {
+    window.location.replace("pagerapp://home")
+  window.location = 'http://android.davidwalsh.name';
+  }
+  else{
+   console.warning("Wrong Platform") 
+  }
+  </script>
 </body>
 </html>
