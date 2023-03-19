@@ -1,20 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <!--onload="window.location.replace("pagerapp://home")"-->
-<body>
-   <script>
-    function onLoad(){
-       var urlLink = "http://www.instagram.com/OwenDunnigan";
-       var ua = navigator.userAgent.toLowerCase();
-       var isAndroid = ua.indexOf("android") > -1;
-       if(isAndroid) {
-          urlLink = "pagerapp://home";
-       }
-       document.getElementById('yourLink').setAttribute('href', urlLink);
-    }
-    window.onload = onLoad;
-    </script>
-    
-    <a id="yourLink" class="grey-text text-lighten-3" target="_blank">Link</a>
+<body onload="window.location.replace("pagerapp://home")">
 </body>
 </html>
