@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html>
-<body onload="">
-  <script>
-  var ua = navigator.userAgent.toLowerCase();
-  var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-  if(isAndroid) {
-    window.location.replace("pagerapp://home");
-  }
-  else{
-   alert("Wrong Platform") 
-  }
-  </script>
+<body onload="pagerapp://home">
 </body>
 </html>
