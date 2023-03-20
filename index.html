@@ -4,12 +4,12 @@
     <!-- <meta http-equiv="refresh" content="0;pagerapp://home"> -->
   </head>
 <body>
-    <p>If you are not redirected, please click <a id="link" href="pagerapp://home">here</a>.</p>
+    <p>If you are not redirected, please click <a id='link' href="pagerapp://home">here</a>.</p>
     <script>
         const queryString = window.location.search
         const mylink = "pagerapp://" + queryString
         alert(mylink)
-        document.querySelector('#someId').href = mylink
+        document.querySelector('link').href = mylink
         document.getElementById('link').setAttribute('text', 'mylink')
         document.querySelector('meta').setAttribute("content", "0;" + mylink)
         
