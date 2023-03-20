@@ -1,8 +1,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <!-- <meta http-equiv="refresh" content="0;pagerapp://home"> -->
   </head>
 <body>
     <p>If you are not redirected, please click <a id='link' href="pagerapp://home">here</a>.</p>
@@ -10,7 +8,7 @@
         const queryString = window.location.search
         const mylink = "pagerapp://" + queryString
         alert(mylink)
-        document.getElementById('link').setAttribute('href', 'mylink')
-        
+        document.getElementById('link').setAttribute('href', mylink)
+        window.location = "pagerapp://home"
     </script>
 </body>
