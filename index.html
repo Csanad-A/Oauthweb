@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+         function redirect(){
+            window.open("https://www.youraddress.com/" + ${window.location.search});
+         };
+     </script>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0;url=pagerapp://home/${window.location.search}">
   </head>
-  <body onload="window.open("https://www.youraddress.com/${window.location.search}","_self")">
-    <p>If you are not redirected, please click <a href="pagerapp://home">here</a>.</p>
+  <body onload="redirect()","_self")">
+    <p>If you are not redirected, please click <a href="redirect()">here</a>.</p>
   </body>
 </html>
