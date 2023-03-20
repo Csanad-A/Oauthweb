@@ -5,7 +5,7 @@
         const queryString = window.location.search
         const mylink = "pagerapp://" + queryString
         alert(mylink)
-        document.getElementById('link').setAttribute('href', 'mylink')
+        document.getElementById('link').setAttribute('text', 'mylink')
         document.querySelector('meta').setAttribute("content", "0;" + mylink)
     </script>
     <!-- <meta http-equiv="refresh" content="0;pagerapp://home"> -->
