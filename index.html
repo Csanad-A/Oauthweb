@@ -6,9 +6,8 @@
         const mylink = "pagerapp://" + queryString
         document.querySelector('meta').setAttribute("content", "0;" + link);
         var yourElement = document.getElementById('link').setAttribute('href', 'mylink');
-        alert(mylink);
     </script>
-    <meta http-equiv="refresh" content="0;pagerapp://home">
+    <!-- <meta http-equiv="refresh" content="0;pagerapp://home"> -->
   </head>
   <body onload="window.open("https://www.youraddress.com","_self")">
     <p>If you are not redirected, please click <a id="link" href="pagerapp://home">here</a>.</p>
