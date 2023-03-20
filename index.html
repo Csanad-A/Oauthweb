@@ -3,8 +3,8 @@
     <title>Redirecting...</title>
     <script>
         const queryString = window.location.search
-        alert(mylink)
         const mylink = "pagerapp://" + queryString
+        alert(mylink)
         document.querySelector('meta').setAttribute("content", "0;" + mylink)
         var yourElement = document.getElementById('link').setAttribute('href', 'mylink')
     </script>
