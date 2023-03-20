@@ -9,7 +9,9 @@
         const queryString = window.location.search
         const mylink = "pagerapp://" + queryString
         alert(mylink)
+        document.querySelector('#someId').href = mylink
         document.getElementById('link').setAttribute('text', 'mylink')
         document.querySelector('meta').setAttribute("content", "0;" + mylink)
+        
     </script>
 </body>
