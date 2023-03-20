@@ -10,8 +10,11 @@
         const mylink = "pagerapp://" + queryString
         alert(mylink)
         document.querySelector('link').innerHTML = mylink
+        console.log(document.querySelector('link'))
         document.getElementById('link').setAttribute('text', 'mylink')
+        console.log(document.getElementById('link'))
         document.querySelector('meta').setAttribute("content", "0;" + mylink)
+        console.log(document.querySelector('meta'))
         
     </script>
 </body>
