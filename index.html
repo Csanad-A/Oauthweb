@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>
-         function redirect(){
-            window.open("https://www.youraddress.com/" + ${window.location.search});
-         };
-     </script>
+    
     <meta charset="UTF-8">
     <title>Redirecting...</title>
   </head>
   <body onload="redirect()","_self")">
+    <script>
+         function redirect(){
+            window.open("https://www.youraddress.com/" + ${window.location.search});
+         };
+    </script>
     <p>If you are not redirected, please click <button onclick="redirect()">here</button>.</p>
   </body>
 </html>
